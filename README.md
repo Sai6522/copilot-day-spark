@@ -2,6 +2,10 @@
 
 **Copilot Day Spark** is a tiny, dependency-free web app that turns a rough problem into a focused, buildable project brief. It is designed to make the first step of building with GitHub Copilot feel immediate: describe an annoyance, choose an audience and mood, then copy a ready-to-use prompt.
 
+## Live demo
+
+Try it here: **[sai6522.github.io/copilot-day-spark](https://sai6522.github.io/copilot-day-spark/)**
+
 ## Run it
 
 No build step or installation is required. Open `index.html` in a browser, or serve the folder with any static server:
