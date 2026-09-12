@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Turn a problem into a buildable project idea with Copilot Day Spark." />
+    <title>Copilot Day Spark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <nav class="nav">
+        <a class="brand" href="./"><span class="brand-mark">✦</span> Copilot Day Spark</a>
+        <span class="nav-note">Built with GitHub Copilot</span>
+      </nav>
+
+      <section class="hero">
+        <div class="eyebrow"><span></span> Make something useful today</div>
+        <h1>From “someone should build this”<br /><em>to “I just built it.”</em></h1>
+        <p class="hero-copy">Give Spark a problem you care about. Get a focused project brief you can start with GitHub Copilot in minutes.</p>
+      </section>
+
+      <section class="workspace" aria-label="Project idea generator">
+        <div class="panel input-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="section-label">01 / Your spark</p>
+              <h2>What would you improve?</h2>
+            </div>
+            <span class="step-icon">↗</span>
+          </div>
+          <label for="problem">A problem, annoyance, or “what if”</label>
+          <textarea id="problem" maxlength="240" placeholder="My team loses time finding the latest project docs...">My team loses time finding the latest project docs</textarea>
+          <div class="field-meta"><span>Be specific or stay delightfully vague.</span><span id="counter">57 / 240</span></div>
+
+          <div class="field-grid">
+            <div>
+              <label for="audience">Who is it for?</label>
+              <select id="audience">
+                <option>My team</option>
+                <option>Students</option>
+                <option>Creators</option>
+                <option>Small businesses</option>
+                <option>My community</option>
+              </select>
+            </div>
+            <div>
+              <label for="mood">Build mood</label>
+              <select id="mood">
+                <option>Practical</option>
+                <option>Playful</option>
+                <option>Beautiful</option>
+                <option>Experimental</option>
+              </select>
+            </div>
+          </div>
+          <button id="generate" class="primary-button">Generate my build brief <span>→</span></button>
+          <p class="shortcut">Tip: press <kbd>Ctrl</kbd> <span>+</span> <kbd>Enter</kbd> to generate</p>
+        </div>
+
+        <div class="panel result-panel" aria-live="polite">
+          <div class="panel-heading">
+            <div>
+              <p class="section-label">02 / Your build brief</p>
+              <h2 id="result-title">DocuDash</h2>
+            </div>
+            <button id="copy" class="icon-button" title="Copy project brief" aria-label="Copy project brief">⧉</button>
+          </div>
+          <p id="result-tagline" class="result-tagline">A calm, searchable home for the docs your team actually needs.</p>
+
+          <div class="result-block">
+            <span class="result-label">The tiny promise</span>
+            <p id="result-promise">Find the right answer in under 30 seconds, without asking “where is that file?”</p>
+          </div>
+          <div class="result-block">
+            <span class="result-label">Your first three features</span>
+            <ol id="result-features">
+              <li>Paste links or upload docs into one focused library.</li>
+              <li>Search titles, tags, and content with instant results.</li>
+              <li>Show a “freshness” badge so stale docs stand out.</li>
+            </ol>
+          </div>
+          <div class="result-block prompt-block">
+            <span class="result-label">Give this to Copilot</span>
+            <div class="prompt" id="result-prompt">Build a responsive single-page app called DocuDash for My team. Let users add project documentation links, search them instantly, and see when each document was last updated. Use a calm, practical visual style with localStorage and no backend for the first version.</div>
+          </div>
+          <div class="result-footer">
+            <span id="result-stack">HTML · CSS · JavaScript · localStorage</span>
+            <button id="regenerate" class="text-button">Surprise me <span>↻</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="share-card">
+        <div class="share-icon">✳</div>
+        <div>
+          <p class="section-label">Make it real</p>
+          <h2>One spark. One tiny launch.</h2>
+          <p>Share what you made with <strong>#githubcopilotdaycontest</strong> <strong>#sweepstakes</strong></p>
+        </div>
+        <button id="share" class="secondary-button">Copy share caption <span>↗</span></button>
+      </section>
+
+      <footer>Copilot Day Spark <span>·</span> A tiny project with a big “let’s build it” energy.</footer>
+    </main>
+    <div id="toast" class="toast" role="status"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

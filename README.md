@@ -1,4 +1,38 @@
-# MICROSOFT GITHUB COPILOT DAY SWEEPSTAKES
+# Copilot Day Spark
+
+**Copilot Day Spark** is a tiny, dependency-free web app that turns a rough problem into a focused, buildable project brief. It is designed to make the first step of building with GitHub Copilot feel immediate: describe an annoyance, choose an audience and mood, then copy a ready-to-use prompt.
+
+## Run it
+
+No build step or installation is required. Open `index.html` in a browser, or serve the folder with any static server:
+
+```bash
+python -m http.server 8080
+```
+
+Then visit <http://localhost:8080>.
+
+## What it demonstrates
+
+- A responsive, accessible single-page interface
+- Pure HTML, CSS, and JavaScript with no external runtime dependencies
+- Generated project briefs and Copilot-ready prompts
+- Clipboard actions for the prompt and a social caption
+- A clear “tiny launch” loop that can be demonstrated in one short recording
+
+## Sweepstakes entry note
+
+The official rules require a **publicly viewable** post on X, Instagram, or LinkedIn that includes something created using the GitHub Copilot app or GitHub Copilot CLI, plus both `#githubcopilotdaycontest` and `#sweepstakes`. This project is intended to be shared only after you have personally used GitHub Copilot to create or meaningfully develop it. Do not make your social account private when submitting an entry.
+
+Example caption:
+
+> I turned “my team loses time finding the latest project docs” into DocuDash with GitHub Copilot. One spark, one tiny launch. #githubcopilotdaycontest #sweepstakes
+
+The sweepstakes is not sponsored, endorsed, administered by, or associated with X, Instagram, or LinkedIn. See the official rules below for eligibility, dates, entry limits, and exclusions.
+
+---
+
+## Official rules
 
 ## OFFICIAL RULES
 
